@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Host discovery, DNS recon, NDP analysis,
+
+OVector is an attack-surface and initial-access vector mapper that correlates exposed services, versions and misconfigurations into prioritized entry-point candidates. It aggregates reconnaissance data, matches it against a knowledge base of known weaknesses, and ranks potential vectors by exploitability and impact. It is intended for authorized penetration-testing and red-team planning.
 
 ---
 
 ## ✨ Features
 
-- IPv6 recon and lab-only offensive modules (dry-run default; --lab required for live attacks)
+
+- Correlates exposed services, versions and misconfigurations into candidate attack vectors
+- Knowledge-base matching of known weaknesses and common entry points
+- Exploitability and impact scoring to prioritize vectors
+- Aggregates reconnaissance input from multiple sources
+- Structured export of ranked vectors for reporting
+- Offline --self-test for safe verification
 
 ---
 
@@ -37,8 +44,11 @@ Host discovery, DNS recon, NDP analysis,
 
 ## 🚀 Usage
 
+
 ```bash
 ./OVector
+./OVector --self-test
+./OVector --help
 ```
 
 ---
